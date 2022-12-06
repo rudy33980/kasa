@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import "../style/Home.css";
-import Header from "../components/Header";
 import img from "../assets/img.jpg";
-
+// import Apropos from "./Apropos";
 function Home() {
+
+
   // state  (état, données)
+   let navigate = useNavigate();
+
   const [data, setData] = useState([]);
-  console.log(setData);
+  // console.log(setData);
   const getData = () => {
     fetch('logements.json', {
       headers: {
@@ -16,11 +19,11 @@ function Home() {
       },
     })
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
         return response.json();
       })
       .then(function (myJson) {
-        console.log(myJson);
+        // console.log(myJson);
         setData(myJson);
       });
   };
@@ -29,16 +32,16 @@ function Home() {
   }, []);
 
   // Comportements;
-  let navigate = useNavigate();
-  const logementCible = (itemTags, equipments) => {
-  navigate("../EquipementLog/" + itemTags + equipments);
+
+  const handleSelect = (id) => {
+    // console.log(id);
+    navigate("../FicheLogements/"+id)
   }
   // affichage (render)
   return (
     <div className="container">
       <div>
-        <Header />
-        <section>
+           <section>
           <div>
             <img className="banniere" src={img} alt="banniere" />
             <h1>Chez vous, partout et ailleurs</h1>
@@ -48,14 +51,17 @@ function Home() {
               data.length > 0 &&
               data.map((item) => (
                 <div className="card" key={item.id}>
-                  {item.id}
-                  <img
-                    onClick={() => logementCible(item.tags, item.equipments)}
+                  <img onClick= {()=> handleSelect(item.id) }
                     className="pictures"
                     src={item.cover}
                     alt="logement"
                   />
                   <p>{item.title}</p>
+                       {/* <Apropos
+                       data={item.title}
+                       location={item.location}
+                        />  
+                        <Apropos /> */}
                 </div>
               ))}
           </div>

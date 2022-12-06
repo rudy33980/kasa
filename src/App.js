@@ -1,28 +1,26 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Logement from "./pages/Logement";
+import FicheLogement from "./pages/FicheLogements";
 import Erreur404 from "./pages/Erreur404";
-import Apropos from "./pages/Apropos";
+import NotFounds from "./pages/NotFounds";
 import Navigation from "./Routes/Navigation";
+import Header from "./components/Header";
+import Footer from "./components/Footer"
+import FicheLogements from "./pages/FicheLogements";
 
-// function EquipementLog() {
-//   // Get the userId param from the URL.
-//   let { userId } = useParams();
-//   console.log(userId);
-//   // ...
-// }
 
 function App() {
   return (
     <div>
       <Navigation />
+      <Header />
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/logement" element={<Logement />} />
+        <Route path="/ficheLogements/:id" element={<FicheLogements />} />
         <Route path="/erreur404" element={<Erreur404 />} />
-        <Route path="/apropos" element={<Apropos />} />
-        <Route path="/*" element={<Apropos />} />
+        <Route component={NotFounds} />
       </Routes>
+      <Footer />
     </div>
   );
 }

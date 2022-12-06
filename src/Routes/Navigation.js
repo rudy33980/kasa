@@ -8,14 +8,8 @@ export default function Navigation() {
         <NavLink to="/Home">
           <li>Home</li>
         </NavLink>
-        <NavLink to="/logements">
-          <li>Logements</li>
-        </NavLink>
-        <NavLink to="/equipementLog">
-          <li>EquipementLog</li>
-        </NavLink>
         <NavLink to="/Apropos">
-          <li>Profil</li>
+          <li>Apropos</li>
         </NavLink>
         <NavLink to="/D_404">
           <li>Erreur 404</li>
