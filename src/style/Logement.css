@@ -1,0 +1,143 @@
+.containerBloc {
+ margin-top: 100px;
+}
+
+.containerInformationFiche {
+  margin-top: 50px;
+}
+
+.TitreduLogement {
+  height: 51px;
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ff6060;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+
+}
+                    
+.align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+.name {
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+.location {
+    color: #ff6060;
+}
+.tags {
+    width: 50%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.tag {
+    background-color: #ff6060;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width:115px;
+    height: 25px;
+    margin-right: 20px;
+    color: #eee;
+    
+}
+
+.description, .equipement {
+    background-color: #ff6060;
+    width: auto;
+    height: 56px;
+    color: #eee;
+    border-radius: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.information,.listItem {
+    background-color: #f6f6f6;;
+    color: #ff6060;
+    width: 300px;
+    height: auto;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.hiddenInformation {
+    visibility: hidden;
+}
+
+.listeKitchen {
+    padding: 0;
+}
+
+.listVille{
+   display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.motKey {
+    width: 10%;
+    text-align: center;
+    height: 25px;
+    background-color:  #ff6060;
+    border-radius: 10px;
+    color: #eee;
+    margin: 10px;
+    padding: 5px;
+            
+}
+.flex {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+}
+
+.containerDescription {
+    margin-right: 50px;
+}
+
+.containerPictures {
+    width: 1240px;
+    height: 415px;
+}
+
+.containerInformationFiche {
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.flecheHaut,.flecheBas {
+    margin-right: 20px;
+}
+
+.containerEquipement {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.containerStars {
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+}
+.StarsFull, .starEmpty {
+    padding-right: 10px;
+}

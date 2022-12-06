@@ -11,7 +11,7 @@ export default function Navigation() {
         <NavLink to="/Apropos">
           <li>Apropos</li>
         </NavLink>
-        <NavLink to="/D_404">
+        <NavLink to="*">
           <li>Erreur 404</li>
         </NavLink>
       </ul>

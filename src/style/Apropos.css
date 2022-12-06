@@ -1,8 +1,12 @@
-.e {
-    color: rgb(12, 11, 11);
-    font:bold;
-    width: 1000px;
-    height: 1000px;
-    /* font-size: 5px; */
-    /* border: 1px solid blue; */
+.banner {
+margin: 100px auto;
+width: 1240px;
+}
+.bannerImg {
+    border-radius: 25px;
+
+}
+.Tabs {
+    width: 1024px;
+    margin: 0 auto;
 }

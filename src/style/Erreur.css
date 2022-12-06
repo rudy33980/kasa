@@ -1,0 +1,27 @@
+.PageErreur {
+    margin: auto;
+
+}
+
+.erreur {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 175px;
+}
+
+
+.page {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 175px;
+
+} 
+
+.accueil {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 250px 20px;
+}
