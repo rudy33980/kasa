@@ -7,6 +7,5 @@ function Home() {
   return (
    <Card />
   )
-
 }
 export default Home;
