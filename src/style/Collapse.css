@@ -1,17 +1,27 @@
+
+.containerEquipement {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .Collapse {
   margin-top: 30px;
 }
-
-
 
 .Collapse-visible {
   background: #ff6060;
   border-radius: 10px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #ffffff;
   padding: 10px 15px;
   margin-right: 20px;
   height: 47px;
+}
+
+.Collapse-visible h1 {
+  font-size: 20px;
 }
 
 .flecheHaut {
@@ -44,3 +54,29 @@
   color: #ff6060;
 }
 
+/* Version mobile  */
+
+
+@media (max-width:375px) {
+
+.containerEquipement {
+  display: block;
+  margin-top: 100px;
+
+}
+.Collapse-visible {
+  height: 30px;
+  margin: 0 ;
+
+}
+.Collapse-visible h1 {
+font-size:1.7ch;}
+
+.Tabs {
+  width: 100%;
+  min-width: 100%;
+}
+
+
+
+}

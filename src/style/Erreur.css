@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .PageErreur {
     margin: auto;
-
 }
 
 .erreur {
@@ -8,20 +13,45 @@
     justify-content: center;
     margin: auto;
     padding-top: 175px;
+    width: 40%;
+
 }
 
-
-.page {
+.message {
     display: flex;
     justify-content: center;
     margin: auto;
-    padding-top: 175px;
+    padding-top: 65px;
+    width: 100%;
+    color: #FF6060;
+    font-size: 36px;
+}
 
-} 
-
-.accueil {
+.linkErreur a {
     display: flex;
     justify-content: center;
-    margin: auto;
-    padding: 250px 20px;
+    color: #FF6060;
+    text-decoration: none;
+    padding: 170px 20px;
+    font-size: 22px;
+}
+
+@media (max-width:375px) {
+    .message {
+        font-size: 20px;
+        width: 70%;
+        height: 50px;
+        text-align: center;
+        font-weight: 500;
+    }
+    
+    .accueil {
+        width: 250px;
+    }
+    
+    .linkErreur a {
+        font-size: 16px;
+        
+    }
+
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState} from "react";
 import "../style/Collapse.css";
-
 import flecheHaut from "../assets/flecheHaut.svg";
 
       const Collapse = (props) => {
@@ -11,22 +10,24 @@ import flecheHaut from "../assets/flecheHaut.svg";
                             setCurrentIndex(!currentIndex);
                         };
 
-                  return (
-                   <div className="Collapse" title='description'>
-                    <div onClick={arrowLeft} className="Collapse-visible">
-    
-        <img
-          className={currentIndex ? "flecheBas" : "flecheHaut"}
-          src={flecheHaut}
-          alt="Arrow directional"
-        />
-      </div>
+                  return (            
+                   <div className="Collapse" >
+                    <div onClick={arrowLeft} className="Collapse-visible" >
+                         <h1>
+                           {props.title}
+                         </h1>
+                    <img
+                      className={currentIndex ? "flecheBas" : "flecheHaut"}
+                      src={flecheHaut}
+                      alt="Arrow directional"
+                    />
+                    </div>
 
 
-      <div className={currentIndex ? "Collapse-change Animate" : "Collapse-change"}>
-          {props.description}
-      </div>
-    </div>
+                  <div className={currentIndex ? "Collapse-change Animate" : "Collapse-change"}>
+                      {props.description}
+                  </div>
+             </div>
 
                     
     );

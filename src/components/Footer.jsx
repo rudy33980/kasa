@@ -1,12 +1,18 @@
 import React from "react";
-import logofooter from "../assets/logofooter.jpg";
-import logo from "../style/logo-footer.css"
+import logofooter from "../assets/logoFooter.svg";
+import logofootersmartphone from "../assets/logofootersmartphone.jpg";
+import logo from "../style/footer.css"
+
 
 const Footer= () => {
   return (
+
+    
     <div>
         <img className="logo-footer" src={logofooter} alt={logo} />
-     </div>
+        <img className="logo-footer-smartphone" src={logofootersmartphone} alt={logo} />
+    </div>
+
   );
 };
 

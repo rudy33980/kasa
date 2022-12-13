@@ -1,12 +1,38 @@
-.banner {
-margin: 100px auto;
-width: 1240px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
 }
+
 .bannerImg {
     border-radius: 25px;
-
+    margin-top: 20px;
+    min-width: 80%
 }
+
 .Tabs {
-    width: 1024px;
+    width: 70%;
     margin: 0 auto;
+}
+
+/* Version mobile  */
+
+
+@media (min-width:375px) {
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+
+    }
+
+    .bannerImg {
+        max-width: 335px;
+        height: 223px;
+        object-fit: cover;
+
+    }
+
+
 }

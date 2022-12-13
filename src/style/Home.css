@@ -1,52 +1,41 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url();
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.containerPage {
+  width: 100%;
+  margin: 0 auto;
 }
 
-section {
-  margin-top: 100px;
+/* banniere */
+
+.containerHeader {
+  margin-top: 70px;
+  position: relative;
   width: 100%;
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banniere {
+  border-radius: 25px;
   position: relative;
-  height: auto;
-  width: auto;
-  margin: 100px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 1240px);
-  border-radius: 25px;
-  box-sizing: border-box;
-  z-index: 0;
+  object-fit: cover;
+  width: 80%;
+  height: 223px;
+  filter: brightness(50%);
+
 }
 
-h1:before {
-  content: "eafzefzea";
-  background-color: #e5e5e5;
-  opacity: 30%;
-  top: 0;
-  text-transform: 100px;
-  z-index: 5;
+.titre {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
+  color: white;
+
 }
 
-h1 {
-  margin: auto;
-  width: 705px;
-  height: auto;
-  position: absolute;
-  top: 25%;
-  left: 30%;
-  color: #ffffff;
-  letter-spacing: 3px;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 142.6%;
-  z-index: 5;
-}
+/* Pictures */
 
 .box {
   background-color: #f6f6f6;
@@ -56,11 +45,14 @@ h1 {
   margin: 100px auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, 340px);
+  grid-column-end: 2;
   justify-content: center;
   grid-gap: 50px;
-  padding: 50px 0;
   border-radius: 25px;
+  padding: 50px 0;
+
 }
+
 .pictures {
   width: 340px;
   min-width: 50px;
@@ -71,19 +63,56 @@ h1 {
   position: relative;
   box-sizing: border-box;
 }
+
 .card {
   position: relative;
 }
-.pictures:hover {
-  border: 3px solid #ff6060;
-}
-p {
-  display: grid;
-  grid-template-columns: 2fr 1fr 3fr;
+
+.itemTitle {
+
   width: 100%;
   position: absolute;
   bottom: 20px;
-  left: 50px;
-  color: #dd1212;
+  left: 20px;
+  color: #f6f6f6;
   font-weight: bold;
+}
+
+/* Version mobile  */
+
+@media (max-width:375px) {
+
+
+  .containerHeader {
+    margin: 0;
+    height: 150px
+  }
+
+  .banniere {
+    width: 335px;
+    height: 111px;
+    border-radius: 10px;
+  }
+  .titre {
+    top: 70px;
+    left: 50px; 
+    font-size: 90%;
+  }
+
+
+  .box {
+    margin: 0 auto;
+    background: none;
+    grid-gap: 20px;
+  }
+
+  .pictures {
+    width: 335px;
+    height: 255px;
+  }
+
+  .itemTitle {
+    width: auto;
+  }
+
 }

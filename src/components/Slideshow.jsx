@@ -34,17 +34,16 @@ export default function Slideshow({pictures}) {
                          return (
                                <div key={index}>
                                   {index === currentIndex && (
-                                  <img className='dimPictures' src={picture} alt="Slider" />
+                                  <div className='ContainerPictures'>
+                                    <img className='dimPictures' src={picture} alt="Slider" />
+                                    <img src={left} onClick={before} alt="arrowleft" className='arrowleft'/>
+                                    <img src={right} onClick={next} alt="arrowright" className='arrowright'/>
+                                    <span className='count'>{currentIndex + 1}/{totalPictures}</span>
+                                 </div>
                                 )}
                                 </div>
                                 );
                              })}
-                           <div >
-                                <span className='count'>{currentIndex + 1}/{totalPictures}</span>
-
-                           </div>
-                               <img src={left} onClick={before} alt="arrowleft" className='arrowleft'/>
-                               <img src={right} onClick={next} alt="arrowright" className='arrowright'/>
                                  
                     
                      

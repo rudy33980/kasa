@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate} from "react-router-dom";
-import img from "../assets/img.jpg";
 
-  
   
 export default function Card () {
 
@@ -10,7 +8,9 @@ export default function Card () {
    let navigate = useNavigate();
 
   const [data, setData] = useState([]);
-  // console.log(setData);
+  console.log(data);
+  console.log(useState);
+
   const getData = () => {
     fetch('logements.json', {
       headers: {
@@ -19,11 +19,9 @@ export default function Card () {
       },
     })
       .then(function (response) {
-        // console.log(response);
         return response.json();
       })
       .then(function (myJson) {
-        // console.log(myJson);
         setData(myJson);
       });
   };
@@ -34,8 +32,7 @@ export default function Card () {
   // Comportements;
 
   const handleSelect = (id) => {
-    // console.log(id);
-    navigate("../FicheLogements/"+id)
+    navigate("../Logements/"+id)
   }
   // affichage (render)
 
@@ -43,10 +40,7 @@ export default function Card () {
     <div className="container">
       <div>
            <section>
-          <div>
-            <img className="banniere" src={img} alt="banniere" />
-            <h1>Chez vous, partout et ailleurs</h1>
-          </div>
+     
           <div className="box">
             {data &&
               data.length > 0 &&
@@ -57,8 +51,8 @@ export default function Card () {
                     src={item.cover}
                     alt="logement"
                   />
-                  <p>{item.title}</p>
-     
+                  {console.log(item.cover)}
+                  <p className="itemTitle">{item.title}</p>
                 </div>
               ))}
           </div>

@@ -1,14 +1,14 @@
 import Collapse from '../components/Collapse'
 import banner from '../assets/banner.png'
 import '../style/Apropos.css'
-import Header from '../components/Header'
+// import Card from '../components/Card'
   
 export default function Apropos() {
 
 
   return (
   <>
-        <Header />
+      
         <div className="banner">
            <img  className='bannerImg' src={banner} alt="mountain banner" />
         </div>
@@ -38,6 +38,7 @@ export default function Apropos() {
             pour nos hôtes."
           />
         </div>
+        {/* <Card /> */}
        </>
     )
    }    

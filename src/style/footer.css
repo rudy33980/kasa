@@ -1,0 +1,22 @@
+.logo-footer {
+   width: 100%;
+   opacity: 1;
+}
+
+.logo-footer-smartphone {
+   opacity: 0;
+}
+
+
+@media (max-width:375px) {
+
+   .logo-footer {
+      opacity: 0;
+   }
+
+   .logo-footer-smartphone {
+      opacity: 1;
+   }
+
+
+}

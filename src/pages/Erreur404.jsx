@@ -1,15 +1,14 @@
 // import React from 'react';
 import img from "../assets/404.jpg";
-import message from "../assets/message.jpg";
-import accueil from "../assets/accueil.jpg";
 import "../style/Erreur.css"
 
 const Erreur404 = () => {
     return (
         <div className='PageErreur'>
             <img src={img} alt="ERREUR 404" className='erreur' />
-            <img src={message} alt="message" className='page' />
-            <img src={accueil} alt="messageRetourAccueil" className='accueil' />
+            <p className="message">Oups!La page que vous demandez n'existe pas</p>
+            <span className="linkErreur"><a href="http://localhost:3000/Home"> Retourner sur la page d'accueil</a>
+            </span>
         </div>
     );
 };
