@@ -12,9 +12,10 @@
   font-size: 24px;
 }
 
-.header a:active {
+.header a:focus {
 border-bottom: 2px solid #ff6060;
-
+/* border-bottom-style: solid; */
+/* border-bottom-style: dotted; */
 }
 
 .header img {
@@ -30,7 +31,9 @@ border-bottom: 2px solid #ff6060;
 
 @media (max-width:375px) {
 
-
+  .header {
+    width: 335px;
+  }
   .header img {
     height: 35px;
   }
