@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import Slidershow from "../components/Slideshow";
-import logements from "../logements.json"
+import logements from "../logements.json";
 import '../style/Logement.css'
 import stars from "../assets/stars.svg";
 import emptyStars from "../assets/emptyStars.svg";
@@ -61,10 +61,6 @@ export default function FicheLogements() {
                     </div>
                     <div className="containerStars">{rating}</div>
 
-
-
-
-
                   </div>
                 </div>
               </div>
@@ -89,7 +85,6 @@ export default function FicheLogements() {
                     </div>
                   ))}
                 />
-
               </div>
             </div>
           </div>

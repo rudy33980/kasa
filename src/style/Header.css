@@ -14,8 +14,6 @@
 
 .header a:focus {
 border-bottom: 2px solid #ff6060;
-/* border-bottom-style: solid; */
-/* border-bottom-style: dotted; */
 }
 
 .header img {

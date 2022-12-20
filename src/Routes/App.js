@@ -1,11 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Erreur404 from "./pages/Erreur404";
-import Header from "./components/Header";
-import Footer from "./components/Footer"
-import Logements from "./pages/Logements";
-import Apropos from "./pages/Apropos";
-import '../src/App.css';
+import Home from "../layout/Home";
+import Erreur404 from "../layout/Erreur404";
+import Header from "../components/Header";
+import Footer from "../components/Footer"
+import Logements from "../layout/Logements";
+import Apropos from "../layout/Apropos";
 
 
 function App() {
@@ -13,6 +12,7 @@ function App() {
     <div className="containerTotal">
       <Header />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/Logements/:id" element={<Logements />} />
         <Route path="/Apropos" element={<Apropos />} />

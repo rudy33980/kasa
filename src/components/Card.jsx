@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-  
-export default function Card () {
+
+export default function Card() {
 
   // state  (état, données)
-   let navigate = useNavigate();
+  let navigate = useNavigate();
 
   const [data, setData] = useState([]);
-  console.log(data);
-  console.log(useState);
 
   const getData = () => {
     fetch('logements.json', {
@@ -32,26 +30,26 @@ export default function Card () {
   // Comportements;
 
   const handleSelect = (id) => {
-    navigate("../Logements/"+id)
+    navigate("../Logements/" + id)
   }
   // affichage (render)
 
   return (
     <div className="container">
       <div>
-           <section>
-     
+        <section>
+
           <div className="box">
             {data &&
               data.length > 0 &&
               data.map((item) => (
                 <div className="card" key={item.id}>
-                  <img onClick= {()=> handleSelect(item.id) }
+                  <img onClick={() => handleSelect(item.id)}
                     className="pictures"
                     src={item.cover}
                     alt="logement"
                   />
-                  {console.log(item.cover)}
+
                   <p className="itemTitle">{item.title}</p>
                 </div>
               ))}

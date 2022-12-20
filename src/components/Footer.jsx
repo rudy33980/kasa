@@ -4,13 +4,13 @@ import logofootersmartphone from "../assets/logofootersmartphone.jpg";
 import logo from "../style/footer.css"
 
 
-const Footer= () => {
+const Footer = () => {
   return (
 
-    
+
     <div>
-        <img className="logo-footer" src={logofooter} alt={logo} />
-        <img className="logo-footer-smartphone" src={logofootersmartphone} alt={logo} />
+      <img className="logo-footer" src={logofooter} alt={logo} />
+      <img className="logo-footer-smartphone" src={logofootersmartphone} alt={logo} />
     </div>
 
   );
