@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import img from "../assets/404.jpg";
 import "../style/Erreur.css"
 
