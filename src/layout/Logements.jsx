@@ -71,7 +71,6 @@ export default function FicheLogements() {
                   <div className='tag' key={tag} >
                     {tag}
                   </div>
-
                 ))}
               </div>
 

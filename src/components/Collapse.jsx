@@ -6,13 +6,13 @@ import flecheHaut from "../assets/flecheHaut.svg";
 const Collapse = (props) => {
   const [currentIndex, setCurrentIndex] = useState(false);
 
-  const arrowLeft = () => {
+  const state = () => {
     setCurrentIndex(!currentIndex);
   };
 
   return (
     <div className="Collapse" >
-      <div onClick={arrowLeft} className="Collapse-visible" >
+      <div onClick={state} className="Collapse-visible" >
         <h1>
           {props.title}
         </h1>

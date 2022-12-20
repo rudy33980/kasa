@@ -1,7 +1,7 @@
 import Collapse from '../components/Collapse'
 import banner from '../assets/banner.png'
 import '../style/Apropos.css'
-// import Card from '../components/Card'
+
 
 export default function Apropos() {
 
@@ -38,7 +38,7 @@ export default function Apropos() {
             pour nos hôtes."
         />
       </div>
-      {/* <Card /> */}
+
     </>
   )
 }
